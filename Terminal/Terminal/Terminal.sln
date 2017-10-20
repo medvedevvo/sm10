@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terminal", "Terminal.csproj", "{622B28E0-9DED-4263-B421-6170505FAC7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C761500E-A474-41E9-9E7D-6F4023638599}"
+	ProjectSection(SolutionItems) = preProject
+		Terminal.vsmdi = Terminal.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecExplorer.TestSuite", "..\SpecExplorer.TestSuite\SpecExplorer.TestSuite.csproj", "{8454A150-6691-4891-928F-96C6CAF4EF66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecExplorer.Sample", "..\SpecExplorer.Sample\SpecExplorer.Sample.csproj", "{735A2267-A26F-4449-BA72-B5BA98982FBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecExplorer", "..\SpecExplorer\SpecExplorer.csproj", "{6D42B473-F0AB-4A04-A615-1123B2FE5C8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpecExplorerTest", "SpecExplorerTest", "{8920EE21-98CA-445D-94FE-0AFAE39CB22B}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Terminal.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{622B28E0-9DED-4263-B421-6170505FAC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{622B28E0-9DED-4263-B421-6170505FAC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{622B28E0-9DED-4263-B421-6170505FAC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{622B28E0-9DED-4263-B421-6170505FAC7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8454A150-6691-4891-928F-96C6CAF4EF66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8454A150-6691-4891-928F-96C6CAF4EF66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8454A150-6691-4891-928F-96C6CAF4EF66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8454A150-6691-4891-928F-96C6CAF4EF66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{735A2267-A26F-4449-BA72-B5BA98982FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{735A2267-A26F-4449-BA72-B5BA98982FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{735A2267-A26F-4449-BA72-B5BA98982FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{735A2267-A26F-4449-BA72-B5BA98982FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D42B473-F0AB-4A04-A615-1123B2FE5C8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D42B473-F0AB-4A04-A615-1123B2FE5C8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D42B473-F0AB-4A04-A615-1123B2FE5C8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D42B473-F0AB-4A04-A615-1123B2FE5C8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{735A2267-A26F-4449-BA72-B5BA98982FBA} = {8920EE21-98CA-445D-94FE-0AFAE39CB22B}
+		{6D42B473-F0AB-4A04-A615-1123B2FE5C8D} = {8920EE21-98CA-445D-94FE-0AFAE39CB22B}
+		{8454A150-6691-4891-928F-96C6CAF4EF66} = {8920EE21-98CA-445D-94FE-0AFAE39CB22B}
+	EndGlobalSection
+	GlobalSection(SpecExplorer.ActivityCompletionStatus) = preSolution
+		SpecExplorer.ActivityCompletionStatus = TestExisting: ;ModelFromScratch: 
+	EndGlobalSection
+EndGlobal

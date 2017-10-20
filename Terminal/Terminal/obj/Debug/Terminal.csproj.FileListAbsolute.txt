@@ -1,0 +1,27 @@
+C:\IU7\Testing\Terminal\Terminal\Terminal\bin\Debug\Terminal.exe.config
+C:\IU7\Testing\Terminal\Terminal\Terminal\bin\Debug\Terminal.exe
+C:\IU7\Testing\Terminal\Terminal\Terminal\bin\Debug\Terminal.pdb
+C:\IU7\Testing\Terminal\Terminal\Terminal\obj\Debug\Terminal.Form1.resources
+C:\IU7\Testing\Terminal\Terminal\Terminal\obj\Debug\Terminal.Properties.Resources.resources
+C:\IU7\Testing\Terminal\Terminal\Terminal\obj\Debug\Terminal.csproj.GenerateResource.Cache
+C:\IU7\Testing\Terminal\Terminal\Terminal\obj\Debug\Terminal.exe
+C:\IU7\Testing\Terminal\Terminal\Terminal\obj\Debug\Terminal.pdb
+C:\IU7\Testing\Terminal\Terminal\Terminal\bin\Debug\Ranorex.Core.WinApi.dll
+C:\IU7\Testing\Terminal\Terminal\Terminal\bin\Debug\Ranorex.Core.Injector.dll
+C:\IU7\Testing\Terminal\Terminal\Terminal\bin\Debug\Ranorex.Libs.WinForms.dll
+C:\IU7\Testing\Terminal\Terminal\Terminal\bin\Debug\Default.srprofile
+C:\IU7\Testing\Terminal\Terminal\Terminal\bin\Debug\TechTalk.SpecRun.dll
+C:\IU7\Testing\Terminal\Terminal\Terminal\obj\Debug\Terminal.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\bin\Debug\Terminal.exe.config
+C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\obj\Debug\Terminal.exe
+C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\obj\Debug\Terminal.pdb
+C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\bin\Debug\Default.srprofile
+C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\bin\Debug\Terminal.exe
+C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\bin\Debug\Terminal.pdb
+C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\bin\Debug\Ranorex.Core.WinApi.dll
+C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\bin\Debug\Ranorex.Core.Injector.dll
+C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\bin\Debug\Ranorex.Libs.WinForms.dll
+C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\obj\Debug\Terminal.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\obj\Debug\Terminal.Form1.resources
+C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\obj\Debug\Terminal.Properties.Resources.resources
+C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\obj\Debug\Terminal.csproj.GenerateResource.Cache
