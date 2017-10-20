@@ -36,27 +36,6 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ranorex.Core" />
-    <Reference Include="Ranorex.Plugin.Cef" />
-    <Reference Include="Ranorex.Plugin.ChromeWeb" />
-    <Reference Include="Ranorex.Plugin.Flex" />
-    <Reference Include="Ranorex.Plugin.Java" />
-    <Reference Include="Ranorex.Plugin.Mobile" />
-    <Reference Include="Ranorex.Plugin.MozillaWeb" />
-    <Reference Include="Ranorex.Plugin.Msaa" />
-    <Reference Include="Ranorex.Plugin.Office" />
-    <Reference Include="Ranorex.Plugin.Qt" />
-    <Reference Include="Ranorex.Plugin.RawText" />
-    <Reference Include="Ranorex.Plugin.Sap" />
-    <Reference Include="Ranorex.Plugin.Uia" />
-    <Reference Include="Ranorex.Plugin.Web" />
-    <Reference Include="Ranorex.Plugin.WebDriver" />
-    <Reference Include="Ranorex.Plugin.Win32" />
-    <Reference Include="Ranorex.Plugin.WinForms" />
-    <Reference Include="Ranorex.Plugin.Wpf" />
-    <Reference Include="SpecRun.SpecFlowPlugin">
-      <HintPath>..\packages\SpecRun.SpecFlow.1.5.2\lib\net45\SpecRun.SpecFlowPlugin.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -67,12 +46,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="TechTalk.SpecFlow">
-      <HintPath>..\packages\SpecFlow.2.1.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
-    </Reference>
-    <Reference Include="TechTalk.SpecRun">
-      <HintPath>..\packages\SpecRun.SpecFlow.1.5.2\lib\net45\TechTalk.SpecRun.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
@@ -111,9 +84,6 @@
       <id>04ab0cc6-f13b-4cf7-995e-5497a603011b</id>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Default.srprofile">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -126,11 +96,6 @@
       <BoundTo>acdc639c-93fb-41c9-9037-4348896267f7</BoundTo>
       <id>8e40fa63-3345-4063-ad62-0fb245a3ef35</id>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config">
-      <id>95a51b4b-ea86-43f1-bf57-59d90aeaddfd</id>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

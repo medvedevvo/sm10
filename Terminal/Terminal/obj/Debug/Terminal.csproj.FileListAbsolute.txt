@@ -25,3 +25,11 @@ C:\Users\user\Desktop\Работа НИИ СМ\Система связи с уд
 C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\obj\Debug\Terminal.Form1.resources
 C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\obj\Debug\Terminal.Properties.Resources.resources
 C:\Users\user\Desktop\Работа НИИ СМ\Система связи с удаленнным ТС\Terminal\Terminal\Terminal\obj\Debug\Terminal.csproj.GenerateResource.Cache
+C:\SM10\SM_Terminal\Terminal\Terminal\obj\Debug\Terminal.exe
+C:\SM10\SM_Terminal\Terminal\Terminal\obj\Debug\Terminal.pdb
+C:\SM10\SM_Terminal\Terminal\Terminal\bin\Debug\Terminal.exe
+C:\SM10\SM_Terminal\Terminal\Terminal\bin\Debug\Terminal.pdb
+C:\SM10\SM_Terminal\Terminal\Terminal\obj\Debug\Terminal.csprojResolveAssemblyReference.cache
+C:\SM10\SM_Terminal\Terminal\Terminal\obj\Debug\Terminal.Form1.resources
+C:\SM10\SM_Terminal\Terminal\Terminal\obj\Debug\Terminal.Properties.Resources.resources
+C:\SM10\SM_Terminal\Terminal\Terminal\obj\Debug\Terminal.csproj.GenerateResource.Cache
