@@ -8,6 +8,7 @@ using System.IO.Ports;
 
 namespace Terminal
 {
+    //*** Класс COM-порта *********************************************************************************************
     public class COMPort
     {
         private SerialPort port;
