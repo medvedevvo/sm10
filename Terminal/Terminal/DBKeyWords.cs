@@ -24,11 +24,14 @@ namespace Terminal
         public string ParamBeginTag = "(";
         public string ParamEndTag = ")";
         public string SeparatorTag = ";";
+        public string HierarchicalTag = ":";
 
         public string GetFinishTag = "?";
         public string ApplyFinishTag = "!";
         public string SetFinishTag = "!";
         public string MessageFinishTag = "!";
+
+        public string ErrorTag = "ERROR";
 
 
         //--- Конструктор класса (внутренний) -------------------------------------------------------------------------

@@ -22,7 +22,10 @@ namespace Terminal
             temp_obj.AddParameter(new RealObjectParameter("Остаток заряда", "CHARGE", "R"));
             objects_list.Add(temp_obj);
 
-            MessageBox.Show(CL.linkGet(objects_list[0], false));
+            List<string> parameters = new List<string>();
+            parameters.Add(objects_list[0].parameters[0].name);
+            parameters.Add(objects_list[0].parameters[1].name);
+            MessageBox.Show(CL.linkGet(objects_list[0], parameters, false));
         }
     }
 }

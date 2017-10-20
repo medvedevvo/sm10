@@ -35,9 +35,9 @@ namespace Terminal
             for (int i = 0; i < cwf.objects_list.Count; i++)
             {
                 temp += "Имя объекта: " + cwf.objects_list[i].name + "\n";
-                for (int j = 0; j < cwf.objects_list[i].paramenters.Count; j++)
+                for (int j = 0; j < cwf.objects_list[i].parameters.Count; j++)
                 {
-                    temp += "\t" + cwf.objects_list[i].paramenters[j].name + //" = " + 
+                    temp += "\t" + cwf.objects_list[i].parameters[j].name + //" = " + 
                                    //cwf.objects_list[i].paramenters[j].key + 
                                    "\n";
                 }

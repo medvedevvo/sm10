@@ -26,24 +26,24 @@ namespace Terminal
     {
         public string name = "";                                        // Имя параметра
         public string key = "";                                         // Ключ параметра
-        public List<RealObjectParameter> paramenters;                   // Список параметров
+        public List<RealObjectParameter> parameters;                    // Список параметров
 
         //--- Конструктор класса --------------------------------------------------------------------------------------
         public RealObject(string name, string key)
         {
             this.name = name;
             this.key = key;
-            this.paramenters = new List<RealObjectParameter>();
+            this.parameters = new List<RealObjectParameter>();
         }
 
         //--- Добавление параметра ------------------------------------------------------------------------------------
         public void AddParameter(string name, string key, string type)
         {
-            paramenters.Add(new RealObjectParameter(name, key, type));
+            parameters.Add(new RealObjectParameter(name, key, type));
         }
         public void AddParameter(RealObjectParameter parameter)
         {
-            paramenters.Add(parameter);
+            parameters.Add(parameter);
         }
     }
 }
