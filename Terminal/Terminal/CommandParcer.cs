@@ -5,13 +5,15 @@ using System.Text;
 
 namespace Terminal
 {
+    /***** Команда ***************************************************************************************************/
     public class Command
     {
-        public string type;
-        public bool withApply;
-        public string key;
-        public List<string> data;
+        public string type;                                             // Тип
+        public bool withApply;                                          // С/без подтверждения
+        public string key;                                              // Идентификатор
+        public List<string> data;                                       // Параметры
 
+        //--- Конструктор класса --------------------------------------------------------------------------------------
         public Command(string type, bool withApply, string key, List<string> data)
         {
             this.type = type;
@@ -77,7 +79,7 @@ namespace Terminal
                 }
                 command.key = temp2[0];
             }
-            else
+            else                                                                // Обработка команд без параметров
             {
                 command.key = msg;
             }

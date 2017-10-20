@@ -28,7 +28,7 @@ namespace Terminal
             parameters.Add(objects_list[0].parameters[1].name);
             string msg = //CL.linkGet(objects_list[0], true);    
                          CL.linkGet(objects_list[0], parameters, true);
-            Command command = CP.parce(msg);
+            Command command = CP.parce("#M_ACCU@2(ACCU:V=12.1;ACCU:A=3.14)!");
             MessageBox.Show(msg);
         }
     }
