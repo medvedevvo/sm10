@@ -23,6 +23,7 @@ namespace Terminal
         public string CountTag = "@";
         public string ParamBeginTag = "(";
         public string ParamEndTag = ")";
+        public string AssignTag = "=";
         public string SeparatorTag = ";";
         public string HierarchicalTag = ":";
 

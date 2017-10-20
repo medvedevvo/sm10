@@ -5,24 +5,6 @@ using System.Text;
 
 namespace Terminal
 {
-    /***** Команда ***************************************************************************************************/
-    public class Command
-    {
-        public string type;                                             // Тип
-        public bool withApply;                                          // С/без подтверждения
-        public string key;                                              // Идентификатор
-        public List<string> data;                                       // Параметры
-
-        //--- Конструктор класса --------------------------------------------------------------------------------------
-        public Command(string type, bool withApply, string key, List<string> data)
-        {
-            this.type = type;
-            this.withApply = withApply;
-            this.key = key;
-            this.data = data;
-        }
-    }
-
     /***** Обработчик команд *****************************************************************************************/
     public class CommandParcer
     {

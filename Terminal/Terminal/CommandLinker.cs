@@ -93,10 +93,32 @@ namespace Terminal
             return linkError(codes);
         }
 
-        public string linkApply(string inbox_message)
+        //--- Подтверждение приема ------------------------------------------------------------------------------------
+        public string linkApply(string object_name)
         {
-            string command = dbKW.StartTag + dbKW.MessageTypeTag +
-                             dbKW.SpaceTag;
+            string command = dbKW.StartTag + dbKW.ApplyTypeTag +
+                             dbKW.SpaceTag + object_name + dbKW.ApplyFinishTag;
+
+
+            return command;
+        }
+
+        public string linkSet(RealObject obj, bool withApply)
+        {
+            string command = dbKW.StartTag + dbKW.SetTypeTag;
+            if (withApply) command += dbKW.AnswerTag;
+            command += dbKW.SpaceTag + obj.key;
+
+            command += dbKW.CountTag + obj.parameters.Count.ToString();
+            command += dbKW.ParamBeginTag;
+
+            foreach (RealObjectParameter param in obj.parameters)
+            {
+                command += obj.key + dbKW.HierarchicalTag + param.key + dbKW.AssignTag + param.val + dbKW.SeparatorTag;
+            }
+            command = command.Remove(command.Length - 1);
+
+            command += dbKW.ParamEndTag + dbKW.SetFinishTag;
 
             return command;
         }
