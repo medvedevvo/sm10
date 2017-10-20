@@ -5,10 +5,12 @@ using System.Text;
 
 namespace Terminal
 {
+    /***** Линковщик команд ******************************************************************************************/
     public class CommandLinker
     {
-        private DBKeyWords dbKW = DBKeyWords.getInstance();
+        private DBKeyWords dbKW = DBKeyWords.getInstance();             // БД ключевых слов протокола
 
+        //--- Получение ключа параметра -------------------------------------------------------------------------------
         private string MakeParamKey(RealObject obj, string name)
         {
             string key = obj.key + dbKW.HierarchicalTag;
@@ -25,6 +27,7 @@ namespace Terminal
             return "";
         }
 
+        //--- Основа команды запроса ----------------------------------------------------------------------------------
         private string linkGetBase(RealObject obj, bool withApply)
         {
             string command = dbKW.StartTag + dbKW.GetTypeTag;
@@ -34,6 +37,7 @@ namespace Terminal
             return command;
         }
 
+        //--- Команда запроса всех параметров объекта -----------------------------------------------------------------
         public string linkGet(RealObject obj, bool withApply)
         {
             string command = linkGetBase(obj, withApply);
@@ -41,6 +45,8 @@ namespace Terminal
 
             return command;
         }
+
+        //--- Команда запроса выбранных параметров объекта ------------------------------------------------------------
         public string linkGet(RealObject obj, List<string> params_names, bool withApply)
         {
             string command = linkGetBase(obj, withApply);
@@ -60,6 +66,7 @@ namespace Terminal
             return command;
         }
 
+        //--- Ответ со списком ошибок ---------------------------------------------------------------------------------
         public string linkError(List<int> codes)
         {
             string command = dbKW.StartTag + dbKW.MessageTypeTag +
@@ -77,6 +84,7 @@ namespace Terminal
             return command;
         }
 
+        //--- Ответ с кодом одной ошибки ------------------------------------------------------------------------------
         public string linkError(int code)
         {
             List<int> codes = new List<int>();
