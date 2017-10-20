@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandWorkerFacade.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
       <id>88f07ff4-5eb6-4e64-9330-8ffaba1d0d48</id>
@@ -63,6 +64,7 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <id>6292a3a0-941b-41e1-8a28-58441db7bd83</id>
     </Compile>
+    <Compile Include="RealObject.cs" />
     <Compile Include="SerialPort.cs">
       <id>b466582a-9af0-4e14-930e-615eba468ca2</id>
     </Compile>

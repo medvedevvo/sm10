@@ -12,7 +12,10 @@ namespace Terminal
     public class COMPort
     {
         private SerialPort port;
+        private CommandWorkerFacade cwf = new CommandWorkerFacade();
         public bool state = false;
+
+
         public delegate void ComReciever(string msg);
         public event ComReciever onRecieve;
         public delegate void ComSender(string msg);
@@ -27,6 +30,21 @@ namespace Terminal
         {
             port = new SerialPort(port_name, rate, Parity.None, 8, StopBits.One);
             port.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+
+            string temp = "";
+            for (int i = 0; i < cwf.objects_list.Count; i++)
+            {
+                temp += "Имя объекта: " + cwf.objects_list[i].name + "\n";
+                for (int j = 0; j < cwf.objects_list[i].paramenters.Count; j++)
+                {
+                    temp += "\t" + cwf.objects_list[i].paramenters[j].name + //" = " + 
+                                   //cwf.objects_list[i].paramenters[j].key + 
+                                   "\n";
+                }
+
+                temp += "\n";
+            }
+                MessageBox.Show(temp);
         }
 
         //--- Открыть COM-порт ----------------------------------------------------------------------------------------
