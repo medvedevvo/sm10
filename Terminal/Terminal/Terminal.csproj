@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandLinker.cs" />
+    <Compile Include="CommandParcer.cs" />
     <Compile Include="CommandWorkerFacade.cs" />
     <Compile Include="DBKeyWords.cs" />
     <Compile Include="Form1.cs">

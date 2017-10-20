@@ -11,21 +11,25 @@ namespace Terminal
     {
         public List<RealObject> objects_list;                           // Список объектов
         private CommandLinker CL = new CommandLinker();
+        private CommandParcer CP = new CommandParcer();
 
         //--- Конструктор класса --------------------------------------------------------------------------------------
         public CommandWorkerFacade()
         {
             objects_list = new List<RealObject>();
             RealObject temp_obj = new RealObject("Аккумулятор", "ACCU");
-            temp_obj.AddParameter(new RealObjectParameter("Напряжение", "V", "R"));
-            temp_obj.AddParameter(new RealObjectParameter("Ток нагрузки", "A", "R"));
-            temp_obj.AddParameter(new RealObjectParameter("Остаток заряда", "CHARGE", "R"));
+            temp_obj.AddParameter(new RealObjectParameter("Напряжение", "V", "R", "12.1"));
+            temp_obj.AddParameter(new RealObjectParameter("Ток нагрузки", "A", "R", "3.14"));
+            temp_obj.AddParameter(new RealObjectParameter("Остаток заряда", "CHARGE", "R", "67"));
             objects_list.Add(temp_obj);
 
             List<string> parameters = new List<string>();
             parameters.Add(objects_list[0].parameters[0].name);
             parameters.Add(objects_list[0].parameters[1].name);
-            MessageBox.Show(CL.linkGet(objects_list[0], parameters, false));
+            string msg = //CL.linkGet(objects_list[0], true);    
+                         CL.linkGet(objects_list[0], parameters, true);
+            Command command = CP.parce(msg);
+            MessageBox.Show(msg);
         }
     }
 }

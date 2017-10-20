@@ -92,5 +92,13 @@ namespace Terminal
 
             return linkError(codes);
         }
+
+        public string linkApply(string inbox_message)
+        {
+            string command = dbKW.StartTag + dbKW.MessageTypeTag +
+                             dbKW.SpaceTag;
+
+            return command;
+        }
     }
 }

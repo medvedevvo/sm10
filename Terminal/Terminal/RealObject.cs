@@ -11,6 +11,7 @@ namespace Terminal
         public string name = "";                                        // Имя параметра
         public string key = "";                                         // Ключ параметра
         public string type = "";                                        // Тип параметра
+        public string val = "";
        
         //--- Конструктор класса --------------------------------------------------------------------------------------
         public RealObjectParameter(string name, string key, string type)
@@ -18,6 +19,13 @@ namespace Terminal
             this.name = name;
             this.key = key;
             this.type = type;
+        }
+        public RealObjectParameter(string name, string key, string type, string val)
+        {
+            this.name = name;
+            this.key = key;
+            this.type = type;
+            this.val = val;
         }
     }
 
@@ -40,6 +48,10 @@ namespace Terminal
         public void AddParameter(string name, string key, string type)
         {
             parameters.Add(new RealObjectParameter(name, key, type));
+        }
+        public void AddParameter(string name, string key, string type, string var)
+        {
+            parameters.Add(new RealObjectParameter(name, key, type, var));
         }
         public void AddParameter(RealObjectParameter parameter)
         {
