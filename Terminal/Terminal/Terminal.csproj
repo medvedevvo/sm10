@@ -48,7 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandLinker.cs" />
     <Compile Include="CommandWorkerFacade.cs" />
+    <Compile Include="DBKeyWords.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
       <id>88f07ff4-5eb6-4e64-9330-8ffaba1d0d48</id>

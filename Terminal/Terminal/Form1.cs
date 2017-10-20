@@ -12,6 +12,7 @@ using System.IO;
 
 namespace Terminal
 {
+    /***** Пользовательское окно *************************************************************************************/
     public partial class Form1 : Form
     {
         private COMPort com = new COMPort();
