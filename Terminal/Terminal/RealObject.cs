@@ -90,5 +90,17 @@ namespace Terminal
 
             return "";
         }
+
+        public int IndexOf(string key)
+        {
+            if (parameters.Count >= 0)
+            {
+                for (int i = 0; i < parameters.Count; i++)
+                    if (parameters[i].key == key)
+                        return i;
+            }
+
+            return -1;
+        }
     }
 }

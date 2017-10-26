@@ -5,6 +5,7 @@ using System.Text;
 
 namespace Terminal
 {
+    /***** База данных объектов **************************************************************************************/
     public class DBObjects
     {
         private static DBObjects instance;                              // Ссылка на текущий объект
