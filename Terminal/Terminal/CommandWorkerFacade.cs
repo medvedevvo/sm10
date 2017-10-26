@@ -30,6 +30,7 @@ namespace Terminal
         public List<RealObject> objects_list;                           // Список объектов
         private CommandLinker CL = CommandLinker.getInstance();
         private CommandParcer CP = CommandParcer.getInstance();
+        private CommandAnswer CA;
 
         //--- Конструктор класса --------------------------------------------------------------------------------------
         public CommandWorkerFacade()
@@ -41,13 +42,16 @@ namespace Terminal
             temp_obj.AddParameter(new RealObjectParameter("Остаток заряда", "CHARGE", "R", "67"));
             objects_list.Add(temp_obj);
 
+            CA = CommandAnswer.getInstance();
+
             List<string> parameters = new List<string>();
-            parameters.Add(objects_list[0].parameters[0].name);
-            parameters.Add(objects_list[0].parameters[1].name);
-            string msg = //CL.linkGet(objects_list[0], true);    
-                         CL.linkGet(objects_list[0], parameters, true);
-            string msg2 = CL.linkSet(objects_list[0], false);
-            Command command = CP.parce(msg2);
+            parameters.Add(objects_list[0].parameters[0].key);
+            parameters.Add(objects_list[0].parameters[2].key);
+            string msg = //CL.linkGet(objects_list[0], false);    
+                         //CL.linkGet(objects_list[0], parameters, false);
+                         CL.linkSet(objects_list[0], true);
+            string answ = CA.answer(objects_list, msg, false);
+            //Command command = CP.parce(msg);
             MessageBox.Show(CL.linkApply("ACCU"));
         }
     }

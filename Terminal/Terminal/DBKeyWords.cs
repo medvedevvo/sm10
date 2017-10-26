@@ -12,7 +12,7 @@ namespace Terminal
         private static DBKeyWords instance;                             // Ссылка на текущий объект
 
         public string StartTag = "#";
-        public string EndOfLineTag = "/n";
+        public string EndOfLineTag = "\n";
         public string SpaceTag = "_";
 
         public string GetTypeTag = "G";

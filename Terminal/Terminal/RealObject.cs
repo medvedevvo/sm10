@@ -35,6 +35,7 @@ namespace Terminal
         public string name = "";                                        // Имя параметра
         public string key = "";                                         // Ключ параметра
         public List<RealObjectParameter> parameters;                    // Список параметров
+        private DBKeyWords dbKW = DBKeyWords.getInstance();             // БД ключевых слов протокола
 
         //--- Конструктор класса --------------------------------------------------------------------------------------
         public RealObject(string name, string key)
@@ -56,6 +57,38 @@ namespace Terminal
         public void AddParameter(RealObjectParameter parameter)
         {
             parameters.Add(parameter);
+        }
+
+        //--- Получение ключа параметра -------------------------------------------------------------------------------
+        public string MakeParamKeyByName(string param_name)
+        {
+            string key = this.key + dbKW.HierarchicalTag;
+
+            foreach (RealObjectParameter rop in this.parameters)
+            {
+                if (rop.name == param_name)
+                {
+                    key += rop.key;
+                    return key;
+                }
+            }
+
+            return "";
+        }
+        public string MakeParamKey(string param_key)
+        {
+            string key = this.key + dbKW.HierarchicalTag;
+
+            foreach (RealObjectParameter rop in this.parameters)
+            {
+                if (rop.key == param_key)
+                {
+                    key += rop.key;
+                    return key;
+                }
+            }
+
+            return "";
         }
     }
 }

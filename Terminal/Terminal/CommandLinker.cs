@@ -22,29 +22,22 @@ namespace Terminal
             if (instance == null)
                 instance = new CommandLinker();
             return instance;
-        }
-
-        //--- Получение ключа параметра -------------------------------------------------------------------------------
-        private string MakeParamKey(RealObject obj, string name)
-        {
-            string key = obj.key + dbKW.HierarchicalTag;
-
-            foreach (RealObjectParameter rop in obj.parameters)
-            {
-                if (rop.name == name)
-                {
-                    key += rop.key;
-                    return key;
-                }  
-            }
-
-            return "";
-        }
+        } 
 
         //--- Основа команды запроса ----------------------------------------------------------------------------------
         private string linkGetBase(RealObject obj, bool withApply)
         {
             string command = dbKW.StartTag + dbKW.GetTypeTag;
+            if (withApply) command += dbKW.AnswerTag;
+            command += dbKW.SpaceTag + obj.key;
+
+            return command;
+        }
+
+        //--- Основа команды ответа ----------------------------------------------------------------------------------
+        private string linkAnswerBase(RealObject obj, bool withApply)
+        {
+            string command = dbKW.StartTag + dbKW.MessageTypeTag;
             if (withApply) command += dbKW.AnswerTag;
             command += dbKW.SpaceTag + obj.key;
 
@@ -61,15 +54,18 @@ namespace Terminal
         }
 
         //--- Команда запроса выбранных параметров объекта ------------------------------------------------------------
-        public string linkGet(RealObject obj, List<string> params_names, bool withApply)
+        public string linkGet(RealObject obj, List<string> params_keys, bool withApply)
         {
+            if (params_keys.Count == 0)                                 // Если список параметров пуст
+                return linkGet(obj, withApply);
+               
             string command = linkGetBase(obj, withApply);
-            command += dbKW.CountTag + params_names.Count.ToString();
+            command += dbKW.CountTag + params_keys.Count.ToString();
             command += dbKW.ParamBeginTag;
 
-            foreach (string name in params_names)
+            foreach (string key in params_keys)
             {
-                string temp = MakeParamKey(obj, name);
+                string temp = obj.MakeParamKey(key);
                 if (temp == "") return linkError(0);
                 command += temp + dbKW.SeparatorTag;
             }
@@ -108,22 +104,19 @@ namespace Terminal
         }
 
         //--- Подтверждение приема ------------------------------------------------------------------------------------
-        public string linkApply(string object_name)
+        public string linkApply(string object_key)
         {
             string command = dbKW.StartTag + dbKW.ApplyTypeTag +
-                             dbKW.SpaceTag + object_name + dbKW.ApplyFinishTag;
+                             dbKW.SpaceTag + object_key + dbKW.ApplyFinishTag;
 
 
             return command;
         }
 
-        public string linkSet(RealObject obj, bool withApply)
+        //--- Формирование списка значений с параметрами --------------------------------------------------------------
+        public string linkParamKeyValueListBase(RealObject obj)
         {
-            string command = dbKW.StartTag + dbKW.SetTypeTag;
-            if (withApply) command += dbKW.AnswerTag;
-            command += dbKW.SpaceTag + obj.key;
-
-            command += dbKW.CountTag + obj.parameters.Count.ToString();
+            string command = dbKW.CountTag + obj.parameters.Count.ToString();
             command += dbKW.ParamBeginTag;
 
             foreach (RealObjectParameter param in obj.parameters)
@@ -133,6 +126,53 @@ namespace Terminal
             command = command.Remove(command.Length - 1);
 
             command += dbKW.ParamEndTag + dbKW.SetFinishTag;
+
+            return command;
+        }
+        public string linkParamKeyValueListBase(RealObject obj, List<string> params_keys)
+        {
+            if (params_keys.Count == 0)                                 // Если список параметров пуст
+                return linkParamKeyValueListBase(obj);
+
+            string command = dbKW.CountTag + obj.parameters.Count.ToString();
+            command += dbKW.ParamBeginTag;
+
+            foreach (string param_key in params_keys)
+            {
+                foreach (RealObjectParameter param in obj.parameters)
+                {
+                    if (param_key == param.key)
+                        command += param.val + dbKW.SeparatorTag;
+                }
+            }
+            
+            command = command.Remove(command.Length - 1);
+
+            command += dbKW.ParamEndTag + dbKW.SetFinishTag;
+
+            return command;
+        }
+
+        //--- Установка значения --------------------------------------------------------------------------------------
+        public string linkSet(RealObject obj, bool withApply)
+        {
+            string command = dbKW.StartTag + dbKW.SetTypeTag;
+            if (withApply) command += dbKW.AnswerTag;
+            command += dbKW.SpaceTag + obj.key + linkParamKeyValueListBase(obj);
+
+            return command;
+        }
+
+        //--- Команда ответа о параметрах объекта ---------------------------------------------------------------------
+        public string linkAnswer(RealObject obj, bool withApply)
+        {
+            string command = linkAnswerBase(obj, withApply) + linkParamKeyValueListBase(obj);
+
+            return command;
+        }
+        public string linkAnswer(RealObject obj, bool withApply, List<string> params_keys)
+        {
+            string command = linkAnswerBase(obj, withApply) + linkParamKeyValueListBase(obj, params_keys);
 
             return command;
         }
