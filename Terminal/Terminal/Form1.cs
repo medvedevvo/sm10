@@ -130,9 +130,15 @@ namespace Terminal
         //--- Обработчик отправки сообщений ---------------------------------------------------------------------------
         private void com_send_msg(string text)
         {
-            rtb_send.Text += text + Environment.NewLine;
-            rtb_send.SelectionStart = rtb_send.Text.Length;
-            rtb_send.ScrollToCaret();
+            rtb_send.Invoke((MethodInvoker)(delegate()
+            {
+                if(text.Length > 0)
+                {
+                    rtb_send.Text += text + Environment.NewLine;
+                    rtb_send.SelectionStart = rtb_send.Text.Length;
+                    rtb_send.ScrollToCaret();
+                }              
+            }));
         }
 
         //--- Обработчик приема сообщений -----------------------------------------------------------------------------

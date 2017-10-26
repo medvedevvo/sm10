@@ -98,6 +98,9 @@ namespace Terminal
             SerialPort sp = (SerialPort)sender;
             string indata = sp.ReadExisting();
             onRecieve(indata);
+
+            string answ = cwf.answer(indata, false);
+            send(answ);
         }       
     }
 }

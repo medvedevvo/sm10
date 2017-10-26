@@ -134,7 +134,7 @@ namespace Terminal
             if (params_keys.Count == 0)                                 // Если список параметров пуст
                 return linkParamKeyValueListBase(obj);
 
-            string command = dbKW.CountTag + obj.parameters.Count.ToString();
+            string command = dbKW.CountTag + params_keys.Count.ToString();
             command += dbKW.ParamBeginTag;
 
             foreach (string param_key in params_keys)

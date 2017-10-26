@@ -68,6 +68,11 @@ namespace Terminal
                 msg = msg.Remove(pos_begin_tag);
 
                 List<string> temp2 = msg.Split(dbKW.CountTag[0]).ToList();
+                if (temp2.Count < 2)
+                {
+                    command.type = "";
+                    return command;
+                }
                 if (Convert.ToInt32(temp2[1]) != command.data.Count)
                 {
                     command.type = "";
