@@ -34,6 +34,9 @@ namespace Terminal
             lbl_path.Text = path_file;
 
             of_dialog.InitialDirectory = path_root + @"Test files\";
+
+            DBObjects dbObj = DBObjects.getInstance();
+            dbObj.objects_list[1].parameters[1].val = sys_timer.Interval.ToString();
         }
 
         //--- Действие при закрытии формы -----------------------------------------------------------------------------
@@ -155,7 +158,7 @@ namespace Terminal
         private void sys_timer_Tick(object sender, EventArgs e)
         {
             DBObjects dbObj = DBObjects.getInstance();
-            dbObj.objects_list[1].parameters[1].val = sys_timer.Interval.ToString();
+            sys_timer.Interval = Convert.ToInt32(dbObj.objects_list[1].parameters[1].val);
             int value = Convert.ToInt32(dbObj.objects_list[1].parameters[0].val) + 1;
             dbObj.objects_list[1].parameters[0].val = value.ToString();
         }

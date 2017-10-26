@@ -21,7 +21,7 @@ namespace Terminal
 
             temp_obj = new RealObject("Таймер", "TIMER");
             temp_obj.AddParameter(new RealObjectParameter("Время с момента запуска", "T", "RW", "0"));
-            temp_obj.AddParameter(new RealObjectParameter("Шаг", "STEP", "RW", "100"));
+            temp_obj.AddParameter(new RealObjectParameter("Шаг (мс)", "STEP_MS", "RW", "100"));
             objects_list.Add(temp_obj);
 
             temp_obj = new RealObject("Аккумулятор", "ACCU");

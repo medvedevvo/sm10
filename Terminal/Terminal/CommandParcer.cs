@@ -29,9 +29,16 @@ namespace Terminal
         {
             Command command = new Command("", false, "", new List<string>());
 
-            if (inboxMessage[0] != dbKW.StartTag[0]) return command;            // Проверка, что пришла именно команда
+            //if (inboxMessage[0] != dbKW.StartTag[0]) return command;            // Проверка, что пришла именно команда
 
-            string msg = inboxMessage.Remove(0, 1);
+            List<string> full_msg = inboxMessage.Split(dbKW.StartTag[0]).ToList();
+            if ((full_msg.Count != 2) || (full_msg[0].Length < 1))
+                return command;
+            string msg = full_msg[1];
+
+            int char_num = Convert.ToInt32(full_msg[0]) - dbKW.StartTag.Length; // Проверка на целостность
+            if(char_num != msg.Length)
+                return command;
 
             List<string> temp = msg.Split(dbKW.SpaceTag[0]).ToList();           // Вычленение типа
             if (temp[0].Length > (dbKW.AnswerTag.Length + 1)) 

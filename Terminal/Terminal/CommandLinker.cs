@@ -51,6 +51,7 @@ namespace Terminal
             string command = linkGetBase(obj, withApply);
             command += dbKW.GetFinishTag;
 
+            command = command.Length.ToString() + command;
             return command;
         }
 
@@ -74,6 +75,7 @@ namespace Terminal
 
             command += dbKW.ParamEndTag + dbKW.GetFinishTag;
 
+            command = command.Length.ToString() + command;
             return command;
         }
 
@@ -92,6 +94,7 @@ namespace Terminal
             command = command.Remove(command.Length - 1);
             command += dbKW.ParamEndTag + dbKW.MessageFinishTag;
 
+            command = command.Length.ToString() + command;
             return command;
         }
 
@@ -111,6 +114,7 @@ namespace Terminal
                              dbKW.SpaceTag + object_key + dbKW.ApplyFinishTag;
 
 
+            command = command.Length.ToString() + command;
             return command;
         }
 
@@ -165,6 +169,7 @@ namespace Terminal
             if (withApply) command += dbKW.AnswerTag;
             command += dbKW.SpaceTag + obj.key + linkParamKeyValueListBase(obj);
 
+            command = command.Length.ToString() + command;
             return command;
         }
 
@@ -173,12 +178,14 @@ namespace Terminal
         {
             string command = linkAnswerBase(obj, withApply) + linkParamKeyValueListBase(obj);
 
+            command = command.Length.ToString() + command;
             return command;
         }
         public string linkAnswer(RealObject obj, bool withApply, List<string> params_keys)
         {
             string command = linkAnswerBase(obj, withApply) + linkParamKeyValueListBase(obj, params_keys);
 
+            command = command.Length.ToString() + command;
             return command;
         }
     }
