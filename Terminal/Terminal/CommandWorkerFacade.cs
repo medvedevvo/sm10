@@ -42,11 +42,12 @@ namespace Terminal
             parameters.Add(objects_list[0].parameters[0].key);
             //parameters.Add(objects_list[0].parameters[1].key);
             string msg = //CL.linkGet(objects_list[0], false);    
-                         //CL.linkGet(objects_list[0], parameters, false);
-                         CL.linkSet(objects_list[0], true);
+                         CL.linkGet(objects_list[0], parameters, false);
+                         //CL.linkSet(objects_list[0], true);
             string answ = CA.answer(objects_list, msg, false);
             //Command command = CP.parce(msg);
             //MessageBox.Show(CL.linkApply("ACCU"));
+            int a = 0;
         }
 
         public string answer(string msg, bool withApply)

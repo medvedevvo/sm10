@@ -11,7 +11,7 @@ namespace Terminal
         private static CommandAnswer instance;                          // Ссылка на текущий объект
         private DBKeyWords dbKW = DBKeyWords.getInstance();             // БД ключевых слов протокола
         private CommandLinker CL = CommandLinker.getInstance();         // Линковщик
-        private CommandParcer CP = CommandParcer.getInstance();         // Парсер
+        private CommandParcer CP = CommandParcer.getInstance();         // Парсер     
 
         //--- Конструктор класса (внутренний) -------------------------------------------------------------------------
         private CommandAnswer()

@@ -10,6 +10,7 @@ namespace Terminal
     {
         private static CommandLinker instance;                          // Ссылка на текущий объект
         private DBKeyWords dbKW = DBKeyWords.getInstance();             // БД ключевых слов протокола
+        private DBObjects dbObj = DBObjects.getInstance();              // БД объектов системы
 
         //--- Конструктор класса (внутренний) -------------------------------------------------------------------------
         private CommandLinker()
@@ -116,8 +117,10 @@ namespace Terminal
         //--- Формирование списка значений с параметрами --------------------------------------------------------------
         public string linkParamKeyValueListBase(RealObject obj)
         {
-            string command = dbKW.CountTag + obj.parameters.Count.ToString();
+            string command = dbKW.CountTag + (obj.parameters.Count+1).ToString();
             command += dbKW.ParamBeginTag;
+            command += dbObj.objects_list[1].MakeParamKey(dbObj.objects_list[1].parameters[0].key) + dbKW.AssignTag + 
+                       dbObj.objects_list[1].parameters[0].val + dbKW.SeparatorTag;
 
             foreach (RealObjectParameter param in obj.parameters)
             {
@@ -134,8 +137,10 @@ namespace Terminal
             if (params_keys.Count == 0)                                 // Если список параметров пуст
                 return linkParamKeyValueListBase(obj);
 
-            string command = dbKW.CountTag + params_keys.Count.ToString();
+            string command = dbKW.CountTag + (params_keys.Count + 1).ToString();
             command += dbKW.ParamBeginTag;
+            command += dbObj.objects_list[1].MakeParamKey(dbObj.objects_list[1].parameters[0].key) + dbKW.AssignTag +
+                       dbObj.objects_list[1].parameters[0].val + dbKW.SeparatorTag;
 
             foreach (string param_key in params_keys)
             {

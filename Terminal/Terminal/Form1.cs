@@ -151,6 +151,14 @@ namespace Terminal
                 rtb_recieved.ScrollToCaret();
             }));
         }
+
+        private void sys_timer_Tick(object sender, EventArgs e)
+        {
+            DBObjects dbObj = DBObjects.getInstance();
+            dbObj.objects_list[1].parameters[1].val = sys_timer.Interval.ToString();
+            int value = Convert.ToInt32(dbObj.objects_list[1].parameters[0].val) + 1;
+            dbObj.objects_list[1].parameters[0].val = value.ToString();
+        }
     }
 
 }

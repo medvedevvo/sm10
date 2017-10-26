@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cb_baudrate = new System.Windows.Forms.ComboBox();
@@ -45,6 +46,7 @@
             this.lbl_path = new System.Windows.Forms.Label();
             this.btn_open_file = new System.Windows.Forms.Button();
             this.of_dialog = new System.Windows.Forms.OpenFileDialog();
+            this.sys_timer = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -210,6 +212,11 @@
             // 
             this.of_dialog.Filter = "Текстовый файл (*.txt)|*.txt|All files (*.*)|*.*";
             // 
+            // sys_timer
+            // 
+            this.sys_timer.Enabled = true;
+            this.sys_timer.Tick += new System.EventHandler(this.sys_timer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,6 +262,7 @@
         private System.Windows.Forms.Label lbl_path;
         private System.Windows.Forms.Button btn_open_file;
         private System.Windows.Forms.OpenFileDialog of_dialog;
+        private System.Windows.Forms.Timer sys_timer;
     }
 }
 

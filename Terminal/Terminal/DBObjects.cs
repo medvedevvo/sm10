@@ -17,8 +17,13 @@ namespace Terminal
             RealObject temp_obj = new RealObject("Системные параметры", "SYS");
             temp_obj.AddParameter(new RealObjectParameter("Макс.время ожидания ответа", "T", "RW", "500"));
             temp_obj.AddParameter(new RealObjectParameter("Кол-во попыток", "N", "RW", "10"));
-            objects_list.Add(temp_obj); 
-            
+            objects_list.Add(temp_obj);
+
+            temp_obj = new RealObject("Таймер", "TIMER");
+            temp_obj.AddParameter(new RealObjectParameter("Время с момента запуска", "T", "RW", "0"));
+            temp_obj.AddParameter(new RealObjectParameter("Шаг", "STEP", "RW", "100"));
+            objects_list.Add(temp_obj);
+
             temp_obj = new RealObject("Аккумулятор", "ACCU");
             temp_obj.AddParameter(new RealObjectParameter("Напряжение", "V", "R", "12.1"));
             temp_obj.AddParameter(new RealObjectParameter("Ток нагрузки", "A", "R", "3.14"));
