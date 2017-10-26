@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandAnswer.cs" />
     <Compile Include="CommandLinker.cs" />
     <Compile Include="CommandParcer.cs" />
     <Compile Include="CommandWorkerFacade.cs" />

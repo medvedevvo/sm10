@@ -28,8 +28,8 @@ namespace Terminal
     public class CommandWorkerFacade
     {
         public List<RealObject> objects_list;                           // Список объектов
-        private CommandLinker CL = new CommandLinker();
-        private CommandParcer CP = new CommandParcer();
+        private CommandLinker CL = CommandLinker.getInstance();
+        private CommandParcer CP = CommandParcer.getInstance();
 
         //--- Конструктор класса --------------------------------------------------------------------------------------
         public CommandWorkerFacade()

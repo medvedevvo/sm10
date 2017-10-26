@@ -8,7 +8,21 @@ namespace Terminal
     /***** Обработчик команд *****************************************************************************************/
     public class CommandParcer
     {
-        private DBKeyWords dbKW = DBKeyWords.getInstance();                     // БД ключевых слов протокола
+        private static CommandParcer instance;                          // Ссылка на текущий объект
+        private DBKeyWords dbKW = DBKeyWords.getInstance();             // БД ключевых слов протокола
+
+        //--- Конструктор класса (внутренний) -------------------------------------------------------------------------
+        private CommandParcer()
+        {
+        }
+
+        //--- Конструктор класса (внешний) ----------------------------------------------------------------------------
+        public static CommandParcer getInstance()
+        {
+            if (instance == null)
+                instance = new CommandParcer();
+            return instance;
+        }
 
         //--- Разбивка команды ----------------------------------------------------------------------------------------
         public Command parce(string inboxMessage)

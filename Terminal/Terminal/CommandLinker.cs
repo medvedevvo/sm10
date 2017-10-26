@@ -8,7 +8,21 @@ namespace Terminal
     /***** Линковщик команд ******************************************************************************************/
     public class CommandLinker
     {
+        private static CommandLinker instance;                          // Ссылка на текущий объект
         private DBKeyWords dbKW = DBKeyWords.getInstance();             // БД ключевых слов протокола
+
+        //--- Конструктор класса (внутренний) -------------------------------------------------------------------------
+        private CommandLinker()
+        {
+        }
+
+        //--- Конструктор класса (внешний) ----------------------------------------------------------------------------
+        public static CommandLinker getInstance()
+        {
+            if (instance == null)
+                instance = new CommandLinker();
+            return instance;
+        }
 
         //--- Получение ключа параметра -------------------------------------------------------------------------------
         private string MakeParamKey(RealObject obj, string name)
