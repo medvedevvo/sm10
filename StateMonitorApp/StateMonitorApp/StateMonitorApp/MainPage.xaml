@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:StateMonitorApp"
+             x:Class="StateMonitorApp.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label  x:Name="_lblName" 
+                    Text="Монитор состояния электромобиля"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="CenterAndExpand" 
+                    TextColor="White"
+                    FontSize="Large"/>
+
+            <Image  Source="https://2ch.hk/b/arch/2017-03-01/src/147778329/14883113270310.png" 
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    HeightRequest="170" />
+
+
+            <Button x:Name="btnCurrentState"
+                    Text="Текущее состояние"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="CenterAndExpand"  
+                    HeightRequest ="60"
+                    WidthRequest="300"
+                    FontSize="Medium"
+                    Clicked="btnCurrentState_Clicked" />
+            <Button x:Name="btnStatistics"
+                    Text="Статистика"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="CenterAndExpand"  
+                    HeightRequest ="60"
+                    WidthRequest="300"
+                    FontSize="Medium"/>
+            <Button x:Name="btnGraphics"
+                    Text="Графики"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="CenterAndExpand"  
+                    HeightRequest ="60"
+                    WidthRequest="300"
+                    FontSize="Medium"/>
+            <Button x:Name="btnSettings"
+                    Text="Настройки"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="CenterAndExpand"  
+                    HeightRequest ="60"
+                    WidthRequest="300"
+                    FontSize="Medium"/>
+            <Button x:Name="btnAbout"
+                    Text="О программе"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="CenterAndExpand"  
+                    HeightRequest ="60"
+                    WidthRequest="300"
+                    FontSize="Medium"/>
+
+            <Label  x:Name="_lblTest" 
+                    Text="Я надеюсь, что ты заработаешь!"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="CenterAndExpand" 
+                    TextColor="White"
+                    BackgroundColor="Green"   />
+            <Label  x:Name="_lblInfo" 
+                    Text="Version 0.1. (c) 2017 МГТУ им. Н.Э.Баумана"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="CenterAndExpand" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
