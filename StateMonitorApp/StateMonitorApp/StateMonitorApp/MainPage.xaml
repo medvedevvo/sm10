@@ -33,28 +33,33 @@
                     HorizontalOptions="CenterAndExpand"  
                     HeightRequest ="60"
                     WidthRequest="300"
-                    FontSize="Medium"/>
+                    FontSize="Medium"
+                    Clicked="btnStatistics_Clicked" />
+            
             <Button x:Name="btnGraphics"
                     Text="Графики"
                     VerticalOptions="EndAndExpand"
                     HorizontalOptions="CenterAndExpand"  
                     HeightRequest ="60"
                     WidthRequest="300"
-                    FontSize="Medium"/>
+                    FontSize="Medium" 
+                    Clicked="btnGraphics_Clicked" />
             <Button x:Name="btnSettings"
                     Text="Настройки"
                     VerticalOptions="EndAndExpand"
                     HorizontalOptions="CenterAndExpand"  
                     HeightRequest ="60"
                     WidthRequest="300"
-                    FontSize="Medium"/>
+                    FontSize="Medium"
+                    Clicked="btnSettings_Clicked" />
             <Button x:Name="btnAbout"
                     Text="О программе"
                     VerticalOptions="EndAndExpand"
                     HorizontalOptions="CenterAndExpand"  
                     HeightRequest ="60"
                     WidthRequest="300"
-                    FontSize="Medium"/>
+                    FontSize="Medium"
+                    Clicked="btnAbout_Clicked" />
 
             <Label  x:Name="_lblTest" 
                     Text="Я надеюсь, что ты заработаешь!"
