@@ -20,8 +20,7 @@
                     HorizontalOptions="CenterAndExpand"  
                     HeightRequest ="60"
                     WidthRequest="300"
-                    FontSize="Medium"
-                    Clicked="btnCurrentState_Clicked" />
+                    FontSize="Medium" />
             <Button x:Name="_btnStatistics"
                     Text="Статистика"
                     VerticalOptions="EndAndExpand"

@@ -32,14 +32,14 @@ C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.Xml.Linq.dll
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.Runtime.dll
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.ComponentModel.Composition.dll
+C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.ComponentModel.dll
+C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
+C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.Reflection.dll
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.Collections.dll
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.ObjectModel.dll
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.Globalization.dll
-C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.ComponentModel.dll
-C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
-C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.Reflection.dll
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.Linq.Expressions.dll
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.IO.dll
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\System.Dynamic.Runtime.dll

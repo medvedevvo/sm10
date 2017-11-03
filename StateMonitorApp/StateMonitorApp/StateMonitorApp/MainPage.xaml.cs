@@ -12,6 +12,7 @@ namespace StateMonitorApp
     {
         public Label lblTest;
         public Button btnAbout;
+        public Button btnCurrentState;
         private int press_cnt = 0;
 
         public MainPage()
@@ -20,8 +21,10 @@ namespace StateMonitorApp
 
             lblTest = this.FindByName<Label>("_lblTest");
             btnAbout = this.FindByName<Button>("_btnAbout");
+            btnCurrentState = this.FindByName<Button>("_btnCurrentState");
 
             btnAbout.Clicked += ToAboutPage;
+            btnCurrentState.Clicked += ToStatePage;
         }
 
         private void btnCurrentState_Clicked(object sender, EventArgs e)
@@ -57,6 +60,11 @@ namespace StateMonitorApp
         private async void ToAboutPage(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new NavigationPage(new AboutPage()));
+        }
+
+        private async void ToStatePage(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new StatePage()));
         }
     }
 }
