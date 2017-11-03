@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StateMonitorApp.SettingsConnectBluetoothPage"
+             BackgroundColor="White"
+             Title="Настройки связи по Bluetooth">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnStatus" Text="Status" Clicked="btnStatus_Clicked" />
+                <Button x:Name="btnScanDev" Text="Scan" Clicked="btnScanDev_Clicked" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnConnect" Text="Connect" Clicked="btnConnect_Clicked" />
+                <Button x:Name="btnConnectKnow" Text="Connect know" Clicked="btnConnectKnow_Clicked"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnGetServs" Text="Get devices" Clicked="btnGetServs_Clicked" />
+            </StackLayout>
+        </StackLayout> 
+    </ContentPage.Content>
+</ContentPage>

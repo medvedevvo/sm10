@@ -13,6 +13,7 @@ namespace StateMonitorApp
         public Label lblTest;
         public Button btnAbout;
         public Button btnCurrentState;
+        public Button btnSettings;
         private int press_cnt = 0;
 
         public MainPage()
@@ -22,9 +23,11 @@ namespace StateMonitorApp
             lblTest = this.FindByName<Label>("_lblTest");
             btnAbout = this.FindByName<Button>("_btnAbout");
             btnCurrentState = this.FindByName<Button>("_btnCurrentState");
+            btnSettings = this.FindByName<Button>("_btnSettings");
 
             btnAbout.Clicked += ToAboutPage;
             btnCurrentState.Clicked += ToStatePage;
+            btnSettings.Clicked += ToSettingsPage;
         }
 
         private void btnCurrentState_Clicked(object sender, EventArgs e)
@@ -65,6 +68,11 @@ namespace StateMonitorApp
         private async void ToStatePage(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new NavigationPage(new StatePage()));
+        }
+
+        private async void ToSettingsPage(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new SettingsConnectBluetoothPage()));
         }
     }
 }
