@@ -2,24 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:StateMonitorApp"
-             x:Class="StateMonitorApp.MainPage">
+             x:Class="StateMonitorApp.MainPage"
+             BackgroundColor="White"
+             Title="Мониторинг электромобиля">
 
     <ContentPage.Content>
         <StackLayout>
-            <Label  x:Name="_lblName" 
-                    Text="Монитор состояния электромобиля"
-                    VerticalOptions="StartAndExpand"
-                    HorizontalOptions="CenterAndExpand" 
-                    TextColor="White"
-                    FontSize="Large"/>
-
             <Image  Source="https://2ch.hk/b/arch/2017-03-01/src/147778329/14883113270310.png" 
                     VerticalOptions="StartAndExpand"
                     HorizontalOptions="CenterAndExpand"
                     HeightRequest="170" />
 
 
-            <Button x:Name="btnCurrentState"
+            <Button x:Name="_btnCurrentState"
                     Text="Текущее состояние"
                     VerticalOptions="EndAndExpand"
                     HorizontalOptions="CenterAndExpand"  
@@ -27,7 +22,7 @@
                     WidthRequest="300"
                     FontSize="Medium"
                     Clicked="btnCurrentState_Clicked" />
-            <Button x:Name="btnStatistics"
+            <Button x:Name="_btnStatistics"
                     Text="Статистика"
                     VerticalOptions="EndAndExpand"
                     HorizontalOptions="CenterAndExpand"  
@@ -36,7 +31,7 @@
                     FontSize="Medium"
                     Clicked="btnStatistics_Clicked" />
             
-            <Button x:Name="btnGraphics"
+            <Button x:Name="_btnGraphics"
                     Text="Графики"
                     VerticalOptions="EndAndExpand"
                     HorizontalOptions="CenterAndExpand"  
@@ -44,7 +39,7 @@
                     WidthRequest="300"
                     FontSize="Medium" 
                     Clicked="btnGraphics_Clicked" />
-            <Button x:Name="btnSettings"
+            <Button x:Name="_btnSettings"
                     Text="Настройки"
                     VerticalOptions="EndAndExpand"
                     HorizontalOptions="CenterAndExpand"  
@@ -52,14 +47,13 @@
                     WidthRequest="300"
                     FontSize="Medium"
                     Clicked="btnSettings_Clicked" />
-            <Button x:Name="btnAbout"
+            <Button x:Name="_btnAbout"
                     Text="О программе"
                     VerticalOptions="EndAndExpand"
                     HorizontalOptions="CenterAndExpand"  
                     HeightRequest ="60"
                     WidthRequest="300"
-                    FontSize="Medium"
-                    Clicked="btnAbout_Clicked" />
+                    FontSize="Medium" />
 
             <Label  x:Name="_lblTest" 
                     Text="Я надеюсь, что ты заработаешь!"
@@ -68,7 +62,8 @@
                     TextColor="White"
                     BackgroundColor="Green"   />
             <Label  x:Name="_lblInfo" 
-                    Text="Version 0.1. (c) 2017 МГТУ им. Н.Э.Баумана"
+                    Text="Версия 0.1 (c) 2017 МГТУ им. Н.Э.Баумана"
+                    TextColor="Gray"
                     VerticalOptions="EndAndExpand"
                     HorizontalOptions="CenterAndExpand" />
 

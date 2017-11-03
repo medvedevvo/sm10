@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StateMonitorApp.AboutPage"
+             BackgroundColor="White"
+             Title="О программе">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Мониторинг электромобиля"
+                VerticalOptions="Start" 
+                HorizontalOptions="StartAndExpand" 
+                TextColor="Black" 
+                FontSize="Medium" />
+            <Label Text="Версия 0.1"
+                VerticalOptions="Start" 
+                HorizontalOptions="StartAndExpand" 
+                TextColor="Black" 
+                FontSize="Medium" />
+
+            <Label Text="Дата обновления: 03.10.2017"
+                VerticalOptions="Start" 
+                HorizontalOptions="StartAndExpand" 
+                TextColor="Black" 
+                FontSize="Medium" />
+
+            <Label Text=" "
+                VerticalOptions="Start" 
+                HorizontalOptions="StartAndExpand" 
+                TextColor="Black" 
+                FontSize="Medium" />
+            
+            <Label Text="Все права защищены (c)"
+                VerticalOptions="Start" 
+                HorizontalOptions="StartAndExpand" 
+                TextColor="Black" 
+                FontSize="Medium" />
+
+            <Label Text="МГТУ им. Н.Э.Баумана"
+                VerticalOptions="Start" 
+                HorizontalOptions="StartAndExpand" 
+                TextColor="Black" 
+                FontSize="Medium" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

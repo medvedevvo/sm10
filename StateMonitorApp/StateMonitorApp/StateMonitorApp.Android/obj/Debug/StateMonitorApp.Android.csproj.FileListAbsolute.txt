@@ -36,9 +36,11 @@ C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\bin\
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\StateMonitorApp.Android.csprojResolveAssemblyReference.cache
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\StateMonitorApp.Android.csproj.CoreCompileInputs.cache
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\StateMonitorApp.Droid.MainPage.xaml.g.cs
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\StateMonitorApp.Droid.App.xaml.g.cs
+C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\StateMonitorApp.Droid.AboutPage.xaml.g.cs
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\StateMonitorApp.Android.dll
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\StateMonitorApp.Android.pdb
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\bin\com.companyname.StateMonitorApp.apk
@@ -48,10 +50,3 @@ C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\res\values\styles.xml
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\R.cs.flag
 C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\uploadflags.txt
-C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\bin\Debug\StateMonitorApp.Android.dll.mdb
-C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
-C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\StateMonitorApp.Android.dll.mdb
-C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
-C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
-C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\SM10\SM_Terminal\StateMonitorApp\StateMonitorApp\StateMonitorApp.Android\obj\Debug\StateMonitorApp.Android.csprojResolveAssemblyReference.cache

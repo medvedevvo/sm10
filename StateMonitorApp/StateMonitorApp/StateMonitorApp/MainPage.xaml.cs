@@ -10,7 +10,8 @@ namespace StateMonitorApp
 {
     public partial class MainPage : ContentPage
     {
-        private Label lblTest;
+        public Label lblTest;
+        public Button btnAbout;
         private int press_cnt = 0;
 
         public MainPage()
@@ -18,7 +19,9 @@ namespace StateMonitorApp
             InitializeComponent();
 
             lblTest = this.FindByName<Label>("_lblTest");
+            btnAbout = this.FindByName<Button>("_btnAbout");
 
+            btnAbout.Clicked += ToAboutPage;
         }
 
         private void btnCurrentState_Clicked(object sender, EventArgs e)
@@ -38,7 +41,6 @@ namespace StateMonitorApp
                 lblTest.Text += "я";
 
             lblTest.Text += "!";
-
         }
 
         private void btnGraphics_Clicked(object sender, EventArgs e)
@@ -51,9 +53,10 @@ namespace StateMonitorApp
             lblTest.Text = "4";
         }
 
-        private void btnAbout_Clicked(object sender, EventArgs e)
+
+        private async void ToAboutPage(object sender, EventArgs e)
         {
-            lblTest.Text = "5";
+            await Navigation.PushModalAsync(new NavigationPage(new AboutPage()));
         }
     }
 }
