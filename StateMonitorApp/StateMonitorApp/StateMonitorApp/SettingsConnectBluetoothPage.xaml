@@ -17,6 +17,19 @@
             <StackLayout Orientation="Horizontal">
                 <Button x:Name="btnGetServs" Text="Get devices" Clicked="btnGetServs_Clicked" />
             </StackLayout>
-        </StackLayout> 
+
+            <ListView x:Name="_lv" ItemSelected="lv_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding NativeDevice.Id}" />
+                                <Label Text="{Binding NativeDevice.Name}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
