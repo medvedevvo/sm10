@@ -1,0 +1,1 @@
+C:\SM10\SM_Terminal\AndroidBluetoothTerminal\AndroidBluetoothTerminal\obj\Debug\AndroidBluetoothTerminal.csproj.CoreCompileInputs.cache

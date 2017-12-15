@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Bluetooth</name>
+    </assembly>
+    <members>
+        <member name="P:Plugin.Bluetooth.CrossBluetooth.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+        <member name="M:Plugin.Bluetooth.CrossBluetooth.Dispose">
+            <summary>
+            Dispose of everything 
+            </summary>
+        </member>
+    </members>
+</doc>

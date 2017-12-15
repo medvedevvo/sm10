@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Bluetooth.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="P:Plugin.Bluetooth.Abstractions.BaseBluetooth.IsTurnedOn">
+            <summary>
+            Gets if bluetooth is available
+            </summary>
+        </member>
+        <member name="M:Plugin.Bluetooth.Abstractions.BaseBluetooth.GetPairedDevices">
+            <summary>
+            Gets if there is an active internet connection
+            </summary>
+        </member>
+        <member name="M:Plugin.Bluetooth.Abstractions.BaseBluetooth.FindDevicesWithIdentifier(System.String)">
+            <summary>
+            Gets if there is an active internet connection
+            </summary>
+        </member>
+        <member name="M:Plugin.Bluetooth.Abstractions.BaseBluetooth.Dispose">
+            <summary>
+            Dispose of class and parent classes
+            </summary>
+        </member>
+        <member name="M:Plugin.Bluetooth.Abstractions.BaseBluetooth.Finalize">
+            <summary>
+            Dispose up
+            </summary>
+        </member>
+        <member name="M:Plugin.Bluetooth.Abstractions.BaseBluetooth.Dispose(System.Boolean)">
+            <summary>
+            Dispose method
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="T:Plugin.Bluetooth.Abstractions.IBluetooth">
+            <summary>
+            Interface for Bluetooth
+            </summary>
+        </member>
+        <member name="P:Plugin.Bluetooth.Abstractions.IBluetooth.IsAvailable">
+            <summary>
+            Gets if bluetooth is available
+            </summary>
+        </member>
+        <member name="P:Plugin.Bluetooth.Abstractions.IBluetooth.IsTurnedOn">
+            <summary>
+            Gets if bluetooth is on
+            </summary>
+        </member>
+    </members>
+</doc>
